@@ -47,10 +47,10 @@ Repositório da **Fase 5 – Hermes Reply** com solução fim a fim:
 - Importe e rode `db/schema_oracle_rm565066.sql` (Oracle 12c+ com IDENTITY).
 
 3. **Popular com dados da simulação**
-> *Dica:* garanta o formato de timestamp antes do insert:
+- *Dica:* garanta o formato de timestamp antes do insert:
 ```sql
 ALTER SESSION SET NLS_TIMESTAMP_FORMAT = 'YYYY-MM-DD"T"HH24:MI:SS';
-
+'''
 
 ## 🤖 Passo a passo — ML (Regressão)
 
