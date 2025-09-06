@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="EVENTO_MANUTENCAO" directorySegmentName="seg_0" id="D0CA2B3B-E56D-EC9C-B407-9E06F01B482E">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EVENTO_ID" id="19D5BE6E-ABF9-23C4-ACA6-A1864AF6B220">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="DESCRICAO" id="69D9AB1E-DD37-E71C-833A-143AFF7DB8E5">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ATIVO_ID" id="6BC051B3-7FDD-8276-BF14-2368C86B2A2A">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEVERIDADE" id="7812F600-FF8D-F797-4D5D-88085442254F">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_EVENTO" id="9EDF14F5-B51E-935D-91F0-840551BF4A07">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_HORA" id="A12C13A4-7837-0A50-924D-3E41342D973B">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_EVT_ATIVO_TS" id="72872644-F60D-8DF9-89F4-413C1A32F3C6">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_EVT_ATIVO" id="366B1A28-0C39-0032-5547-09EE7F548E20">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EVENTO_MANUTENCAO_PK" id="C646C852-6F9F-32DF-BBBB-6B14E74C8E00">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

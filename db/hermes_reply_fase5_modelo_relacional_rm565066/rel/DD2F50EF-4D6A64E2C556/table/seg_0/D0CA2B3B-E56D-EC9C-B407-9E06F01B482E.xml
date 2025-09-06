@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0CA2B3B-E56D-EC9C-B407-9E06F01B482E" name="EVENTO_MANUTENCAO">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>F09E458B-5FC4-3EC6-089C-018E8F8D78AD</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVENTO_ID" id="19D5BE6E-ABF9-23C4-ACA6-A1864AF6B220">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>B24F3070-C4F4-54BB-F238-19648AB01855</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_EVENTO</autoIncrementSequenceName>
+<autoIncrementTriggerName>BI_EVENTO</autoIncrementTriggerName>
+</Column>
+<Column name="ATIVO_ID" id="6BC051B3-7FDD-8276-BF14-2368C86B2A2A">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>8789F4B1-F35E-DECF-4FE3-52ADAE727580</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F0D1E83-5E2C-C6D0-05E4-1663F89D0038" referredColumn="519AA024-4585-E3E6-5F6E-A02D2BEEE090"/>
+</associations>
+</Column>
+<Column name="DATA_HORA" id="A12C13A4-7837-0A50-924D-3E41342D973B">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>C087C50C-32DC-8501-2BA4-21A8BEEE52DC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>2D047A2C-84DD-6755-CB53-9D95ED31F63F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_EVENTO" id="9EDF14F5-B51E-935D-91F0-840551BF4A07">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>56488205-3938-0750-9B0F-41E85CC8F714</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A82AFF71-A4AD-167D-E633-C06C52B9E3C9</domain>
+<listOfValues>
+<valueDef value="FALHA" description=""/>
+<valueDef value="INSPECAO" description=""/>
+<valueDef value="REPARO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEVERIDADE" id="7812F600-FF8D-F797-4D5D-88085442254F">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>E8131641-9C3F-6C2B-538A-9223E91AF91A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRICAO" id="69D9AB1E-DD37-E71C-833A-143AFF7DB8E5">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>9968AF29-6BC0-2ED4-4C0B-5FD6550B438B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4E769C9C-F449-27F7-B14E-78D9FE23EFC1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C646C852-6F9F-32DF-BBBB-6B14E74C8E00" name="EVENTO_MANUTENCAO_PK">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>5DC5313C-6823-92C1-BFAA-4512A849D82C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19D5BE6E-ABF9-23C4-ACA6-A1864AF6B220"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72872644-F60D-8DF9-89F4-413C1A32F3C6" name="IDX_EVT_ATIVO_TS">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>FF003590-733B-DB76-DB6F-4D49DC15B71D</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BC051B3-7FDD-8276-BF14-2368C86B2A2A"/>
+<colUsage columnID="A12C13A4-7837-0A50-924D-3E41342D973B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="366B1A28-0C39-0032-5547-09EE7F548E20" name="FK_EVT_ATIVO">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BC051B3-7FDD-8276-BF14-2368C86B2A2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

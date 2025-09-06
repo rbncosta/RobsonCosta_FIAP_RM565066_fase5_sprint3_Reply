@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SENSOR" directorySegmentName="seg_0" id="DD88C287-E008-7B27-E8C9-5B1342C6CE1C">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VALOR_MAX" id="04964247-01CA-AB7C-5752-DE6CCC4B9A40">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_CALIBRACAO" id="58B3D5B6-18B6-41C5-719F-0A2E63981B16">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_SENSOR" id="6087A425-C2B8-7E3D-BFEE-FDB55D65EE5C">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SENSOR_ID" id="628575D9-9108-8624-004F-DAAC37BFEEA7">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="VALOR_MIN" id="7494A1FB-2FE2-ADD2-0274-48D184756F9D">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ATIVO_ID" id="E678E047-3CAE-9D39-8F84-D0300362A229">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UNIDADE" id="F9F7819B-2CB9-DBA0-B0C5-9E4EE1707E65">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_SENSOR_ATIVO" id="B9ACDC70-B672-22CB-1016-C91054196996">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SENSOR_PK" id="9A7C74D7-D2D6-42F6-E404-CE0D18A2608B">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_SENSOR_ATIVO_TIPO" id="1709AD2F-3C27-90FE-45B7-5C5FEEDA8EC7">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

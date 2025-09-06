@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="2EAAD7E4-3B17-0C2A-A746-4F0D8BCF0C47" name="V_LEITURAS_24H">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>45F3D112-F927-796E-9369-5F71A56C37CB</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT L.SENSOR_ID, L.DATA_HORA, L.VALOR
+FROM LEITURA_SENSOR L
+WHERE L.DATA_HORA >= SYSTIMESTAMP - INTERVAL '24' HOUR]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENSOR_ID" id="C4811765-F5DB-5EBE-E5BB-4F03353EA6F3">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>SENSOR_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>F19B0AC6-91FF-24A7-CAD7-8A5ABE63C667</referencedColumn>
+<table>9CAE5BFD-BF09-0083-FAC0-B7FD80C9E021</table>
+<tableAlias>L</tableAlias>
+<viewID>2EAAD7E4-3B17-0C2A-A746-4F0D8BCF0C47</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DATA_HORA" id="FA221EC0-88E0-5A39-BE94-BE520D4B277F">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>DATA_HORA</headerAlias>
+<reference>false</reference>
+<referencedColumn>5A508E5E-5039-2B90-1223-661DA1F376E7</referencedColumn>
+<table>9CAE5BFD-BF09-0083-FAC0-B7FD80C9E021</table>
+<tableAlias>L</tableAlias>
+<viewID>2EAAD7E4-3B17-0C2A-A746-4F0D8BCF0C47</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="VALOR" id="F3804E4B-3D54-ED17-E952-1AF429C38CD1">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>VALOR</headerAlias>
+<reference>false</reference>
+<referencedColumn>A3C52D64-AF23-8CCF-351C-9380C4734DB2</referencedColumn>
+<table>9CAE5BFD-BF09-0083-FAC0-B7FD80C9E021</table>
+<tableAlias>L</tableAlias>
+<viewID>2EAAD7E4-3B17-0C2A-A746-4F0D8BCF0C47</viewID>
+</viewElement>
+</viewElements>
+</TableView>

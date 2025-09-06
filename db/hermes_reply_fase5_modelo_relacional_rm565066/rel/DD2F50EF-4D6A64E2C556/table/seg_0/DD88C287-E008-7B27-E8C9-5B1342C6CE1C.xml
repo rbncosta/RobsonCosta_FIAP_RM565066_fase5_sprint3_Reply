@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD88C287-E008-7B27-E8C9-5B1342C6CE1C" name="SENSOR">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>65A40A6F-84F1-4E8A-CDB8-75F802249F42</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SENSOR_ID" id="628575D9-9108-8624-004F-DAAC37BFEEA7">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>299BF384-4C52-965B-61C2-95552E2F8547</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_SENSOR</autoIncrementSequenceName>
+<autoIncrementTriggerName>BI_SENSOR</autoIncrementTriggerName>
+</Column>
+<Column name="ATIVO_ID" id="E678E047-3CAE-9D39-8F84-D0300362A229">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>9D5A5096-8EE2-0683-CAAD-0EF4D773E352</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FEFE3663-908E-0A6D-BAAD-468CD1A90121" referredColumn="519AA024-4585-E3E6-5F6E-A02D2BEEE090"/>
+</associations>
+</Column>
+<Column name="TIPO_SENSOR" id="6087A425-C2B8-7E3D-BFEE-FDB55D65EE5C">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>FC8EDEFE-022A-AD05-34A7-679EAFBEBFC2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A82AFF71-A4AD-167D-E633-C06C52B9E3C9</domain>
+<listOfValues>
+<valueDef value="TEMPERATURA" description=""/>
+<valueDef value="UMIDADE" description=""/>
+<valueDef value="VIBRACAO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIDADE" id="F9F7819B-2CB9-DBA0-B0C5-9E4EE1707E65">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>DFF3AE2B-4FC6-D888-FFB9-42095B638FF9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B905CFDB-9AFB-F326-AA08-C9F918445FB1</domain>
+<listOfValues>
+<valueDef value="C" description=""/>
+<valueDef value="MM_S" description=""/>
+<valueDef value="PCT" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR_MIN" id="7494A1FB-2FE2-ADD2-0274-48D184756F9D">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>8B397A17-CD53-9CF3-8711-2300BBD6F26A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR_MAX" id="04964247-01CA-AB7C-5752-DE6CCC4B9A40">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>243E2661-86FE-30AC-17EF-0D8061348076</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_CALIBRACAO" id="58B3D5B6-18B6-41C5-719F-0A2E63981B16">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>DBF795AB-6A18-50CD-05A6-DE2F4CC4E33D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>96F3E706-771A-141B-F0CE-8643E88B1AE8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A7C74D7-D2D6-42F6-E404-CE0D18A2608B" name="SENSOR_PK">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>8344E226-6F89-D7AA-CFC2-F94E45E60274</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="628575D9-9108-8624-004F-DAAC37BFEEA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1709AD2F-3C27-90FE-45B7-5C5FEEDA8EC7" name="UQ_SENSOR_ATIVO_TIPO">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>A65CE225-6B1E-7CBF-CB61-7F1E3011F4A8</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E678E047-3CAE-9D39-8F84-D0300362A229"/>
+<colUsage columnID="6087A425-C2B8-7E3D-BFEE-FDB55D65EE5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9ACDC70-B672-22CB-1016-C91054196996" name="FK_SENSOR_ATIVO">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E678E047-3CAE-9D39-8F84-D0300362A229"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

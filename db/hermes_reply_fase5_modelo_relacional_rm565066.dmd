@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="hermes_reply_fase5_modelo_relacional_rm565066" id="885FA253-9E4B-6CE3-7A32-56AA087BB0F8" version="3.5">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:13:05 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>885FA253-9E4B-6CE3-7A32-56AA087BB0F8</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="44D60305-9A36-0A69-F8C8-8B69672A6DE3">
+<designStoragePath>C:\schema_oracle_ptbr_legacy</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="FECD5544-80A5-6CB8-FEDC-E405F0BD714C" name="schema_oracle_ptbr_legacy" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

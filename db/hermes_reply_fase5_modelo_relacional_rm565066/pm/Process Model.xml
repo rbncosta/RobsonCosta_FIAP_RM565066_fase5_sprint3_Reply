@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="CA6A5A11-FB1D-23C3-0FCA-539A4BD893D6">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:13:05 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

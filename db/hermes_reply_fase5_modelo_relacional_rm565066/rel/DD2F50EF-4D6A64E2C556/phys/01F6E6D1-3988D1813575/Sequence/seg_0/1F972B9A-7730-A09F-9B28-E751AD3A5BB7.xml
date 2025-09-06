@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="SEQ_ATIVO" directorySegmentName="seg_0" id="1F972B9A-7730-A09F-9B28-E751AD3A5BB7">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:00 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<startWith>1</startWith>
+</SequenceOraclev10g>

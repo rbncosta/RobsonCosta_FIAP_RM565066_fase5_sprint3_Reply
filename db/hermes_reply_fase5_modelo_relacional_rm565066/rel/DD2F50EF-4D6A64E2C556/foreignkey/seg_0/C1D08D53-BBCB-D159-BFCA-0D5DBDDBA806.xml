@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1D08D53-BBCB-D159-BFCA-0D5DBDDBA806" containerWithKeyObject="97833928-6F50-052F-0A6A-7C2A2A921CCD" localFKIndex="95BA95E9-5A23-682C-739E-C571469CCE2D" name="FK_ATIVO_PLANTA">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>E30E1EC7-D269-E94F-03FA-A401892E7279</importedID>
+<referredTableLongName>PLANTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>47C3E6B7-1C7B-9AA9-B055-55C298D7B33A</referredTableID>
+<keyObject>1CC26894-DAF5-D413-A7D7-8443B3AB6CD3</keyObject>
+<referredKeyID>1CC26894-DAF5-D413-A7D7-8443B3AB6CD3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PLANTA_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

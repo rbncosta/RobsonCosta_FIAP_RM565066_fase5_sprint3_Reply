@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="823F227E-DCE1-8685-7285-D32E596DA73D" containerWithKeyObject="9CAE5BFD-BF09-0083-FAC0-B7FD80C9E021" localFKIndex="E506215C-7D01-81A4-7B36-0F43DE66514F" name="FK_LEITURA_SENSOR">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>A56D698C-34AA-D50F-1B89-26D7BBA201E1</importedID>
+<referredTableLongName>SENSOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DD88C287-E008-7B27-E8C9-5B1342C6CE1C</referredTableID>
+<keyObject>9A7C74D7-D2D6-42F6-E404-CE0D18A2608B</keyObject>
+<referredKeyID>9A7C74D7-D2D6-42F6-E404-CE0D18A2608B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SENSOR_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

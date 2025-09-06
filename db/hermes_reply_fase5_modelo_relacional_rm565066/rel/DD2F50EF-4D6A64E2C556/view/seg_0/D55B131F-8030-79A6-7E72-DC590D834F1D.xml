@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="D55B131F-8030-79A6-7E72-DC590D834F1D" name="V_RESUMO_ATIVO_HORA">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>6A879C18-DE3A-8C89-FD77-03AD16D6E4AF</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT A.ATIVO_ID,
+       CAST(L.DATA_HORA AS DATE) AS DIA,
+       EXTRACT(HOUR FROM L.DATA_HORA) AS HORA,
+       AVG(L.VALOR) AS MEDIA_VALOR
+FROM LEITURA_SENSOR L
+JOIN SENSOR S ON S.SENSOR_ID = L.SENSOR_ID
+JOIN ATIVO  A ON A.ATIVO_ID  = S.ATIVO_ID
+GROUP BY A.ATIVO_ID, CAST(L.DATA_HORA AS DATE), EXTRACT(HOUR FROM L.DATA_HORA)]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ATIVO_ID" id="67E9A77B-D324-59AC-36F1-840AA90FB47A">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>ATIVO_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>519AA024-4585-E3E6-5F6E-A02D2BEEE090</referencedColumn>
+<table>97833928-6F50-052F-0A6A-7C2A2A921CCD</table>
+<tableAlias>A</tableAlias>
+<viewID>D55B131F-8030-79A6-7E72-DC590D834F1D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DIA" id="CD75AE43-7001-D707-DF70-EEB652DD2F14">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DIA</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>DIA</headerAlias>
+<expression>CAST(L.DATA_HORAASDATE)</expression>
+<reference>false</reference>
+<viewID>D55B131F-8030-79A6-7E72-DC590D834F1D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="HORA" id="5C80527F-3205-8564-886E-36E0D440678C">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>HORA</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>HORA</headerAlias>
+<expression>EXTRACT(HOURFROML.DATA_HORA)</expression>
+<reference>false</reference>
+<viewID>D55B131F-8030-79A6-7E72-DC590D834F1D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="MEDIA_VALOR" id="92421C03-7951-181A-D9C7-AFE31D7C1C8D">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>MEDIA_VALOR</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>MEDIA_VALOR</headerAlias>
+<expression>AVG(L.VALOR)</expression>
+<reference>false</reference>
+<viewID>D55B131F-8030-79A6-7E72-DC590D834F1D</viewID>
+</viewElement>
+</viewElements>
+</TableView>

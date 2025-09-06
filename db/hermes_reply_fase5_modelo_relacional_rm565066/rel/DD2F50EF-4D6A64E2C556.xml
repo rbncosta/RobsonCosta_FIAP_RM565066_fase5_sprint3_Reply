@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="schema_oracle_ptbr_legacy" id="DD2F50EF-97B6-967E-0874-4D6A64E2C556" mainViewID="FECD5544-80A5-6CB8-FEDC-E405F0BD714C">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:29:59 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>schema_oracle_ptbr_legacy.sql</fileName>
+<pathName>C:\Users\rbnco\Downloads\hermes_reply_fase5_ptbr_regressao_rm565066\db</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

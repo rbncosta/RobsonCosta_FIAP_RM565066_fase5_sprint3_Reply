@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2C8830AC-7477-4AD5-B267-4BF99B8F82AE" mainViewID="8FD51E56-340C-E618-3380-2F1E4039102A">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:13:05 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

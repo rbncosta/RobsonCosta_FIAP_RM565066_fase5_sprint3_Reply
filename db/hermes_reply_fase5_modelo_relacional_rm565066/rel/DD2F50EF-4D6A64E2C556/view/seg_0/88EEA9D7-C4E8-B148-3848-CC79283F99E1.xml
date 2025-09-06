@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="88EEA9D7-C4E8-B148-3848-CC79283F99E1" name="V_ANOMALIAS">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>DA9D96BE-3A37-1D1E-4BE2-7A72BE071172</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT L.LEITURA_ID, S.SENSOR_ID, S.TIPO_SENSOR, L.DATA_HORA, L.VALOR
+FROM LEITURA_SENSOR L
+JOIN SENSOR S ON S.SENSOR_ID = L.SENSOR_ID
+WHERE (S.VALOR_MIN IS NOT NULL AND L.VALOR < S.VALOR_MIN)
+   OR (S.VALOR_MAX IS NOT NULL AND L.VALOR > S.VALOR_MAX)]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="LEITURA_ID" id="1DAC6796-8325-E35D-70DB-637B2D085850">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>LEITURA_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>673E45BD-34DE-EB4C-F18B-57FE4570963D</referencedColumn>
+<table>9CAE5BFD-BF09-0083-FAC0-B7FD80C9E021</table>
+<tableAlias>L</tableAlias>
+<viewID>88EEA9D7-C4E8-B148-3848-CC79283F99E1</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SENSOR_ID" id="495609A2-698D-7CC7-D005-7592E11D75C6">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>SENSOR_ID</headerAlias>
+<reference>false</reference>
+<referencedColumn>628575D9-9108-8624-004F-DAAC37BFEEA7</referencedColumn>
+<table>DD88C287-E008-7B27-E8C9-5B1342C6CE1C</table>
+<tableAlias>S</tableAlias>
+<viewID>88EEA9D7-C4E8-B148-3848-CC79283F99E1</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TIPO_SENSOR" id="9E9CB4FA-C3EA-76C9-EF91-0972AA1EBEAF">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (40)</dataType>
+<headerAlias>TIPO_SENSOR</headerAlias>
+<reference>false</reference>
+<referencedColumn>6087A425-C2B8-7E3D-BFEE-FDB55D65EE5C</referencedColumn>
+<table>DD88C287-E008-7B27-E8C9-5B1342C6CE1C</table>
+<tableAlias>S</tableAlias>
+<viewID>88EEA9D7-C4E8-B148-3848-CC79283F99E1</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DATA_HORA" id="8A78CC64-4C76-23F1-DC2C-F72727022704">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>DATA_HORA</headerAlias>
+<reference>false</reference>
+<referencedColumn>5A508E5E-5039-2B90-1223-661DA1F376E7</referencedColumn>
+<table>9CAE5BFD-BF09-0083-FAC0-B7FD80C9E021</table>
+<tableAlias>L</tableAlias>
+<viewID>88EEA9D7-C4E8-B148-3848-CC79283F99E1</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="VALOR" id="CCE69E2D-C110-500C-08FA-DCEB751EA391">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<headerAlias>VALOR</headerAlias>
+<reference>false</reference>
+<referencedColumn>A3C52D64-AF23-8CCF-351C-9380C4734DB2</referencedColumn>
+<table>9CAE5BFD-BF09-0083-FAC0-B7FD80C9E021</table>
+<tableAlias>L</tableAlias>
+<viewID>88EEA9D7-C4E8-B148-3848-CC79283F99E1</viewID>
+</viewElement>
+</viewElements>
+</TableView>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8F0D1E83-5E2C-C6D0-05E4-1663F89D0038" containerWithKeyObject="D0CA2B3B-E56D-EC9C-B407-9E06F01B482E" localFKIndex="366B1A28-0C39-0032-5547-09EE7F548E20" name="FK_EVT_ATIVO">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>29EBE407-1287-A38F-89E4-EADB2CFB0D65</importedID>
+<referredTableLongName>ATIVO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97833928-6F50-052F-0A6A-7C2A2A921CCD</referredTableID>
+<keyObject>E209D8BB-2755-F895-7D16-20A9A8DB6478</keyObject>
+<referredKeyID>E209D8BB-2755-F895-7D16-20A9A8DB6478</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ATIVO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

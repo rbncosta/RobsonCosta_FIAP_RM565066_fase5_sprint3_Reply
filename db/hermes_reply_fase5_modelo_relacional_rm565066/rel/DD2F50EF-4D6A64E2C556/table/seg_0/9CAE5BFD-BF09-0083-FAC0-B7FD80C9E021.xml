@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9CAE5BFD-BF09-0083-FAC0-B7FD80C9E021" name="LEITURA_SENSOR">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>6349F53F-137F-AACF-1DFF-3C79F5B69D42</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LEITURA_ID" id="673E45BD-34DE-EB4C-F18B-57FE4570963D">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>1C0C5BD9-722D-D2D3-66E3-88EABF466C30</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>SEQ_LEITURA</autoIncrementSequenceName>
+<autoIncrementTriggerName>BI_LEITURA</autoIncrementTriggerName>
+</Column>
+<Column name="SENSOR_ID" id="F19B0AC6-91FF-24A7-CAD7-8A5ABE63C667">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>11B849EF-3E43-F194-7F15-139498E041D6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="823F227E-DCE1-8685-7285-D32E596DA73D" referredColumn="628575D9-9108-8624-004F-DAAC37BFEEA7"/>
+</associations>
+</Column>
+<Column name="DATA_HORA" id="5A508E5E-5039-2B90-1223-661DA1F376E7">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>9C0F5233-0B6A-AF4C-3811-7A716188D3EB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>2D047A2C-84DD-6755-CB53-9D95ED31F63F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR" id="A3C52D64-AF23-8CCF-351C-9380C4734DB2">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>82A784BD-0E68-6E96-3B5B-2B9E17BC2DD0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BB53B011-53C7-B8D3-7195-4814C4A5E3E7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70028CE3-B80F-6A01-94D9-8154A90927D4" name="LEITURA_SENSOR_PK">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>62AB27D7-88EA-A85A-C765-6AD7FD7F08A3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="673E45BD-34DE-EB4C-F18B-57FE4570963D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C9B4F66-B08C-BE1A-4822-532FA1290A5E" name="IDX_LEITURA_SENSOR_TS">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>03B65E2D-6B23-66D7-8572-01EFB5C07C57</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F19B0AC6-91FF-24A7-CAD7-8A5ABE63C667"/>
+<colUsage columnID="5A508E5E-5039-2B90-1223-661DA1F376E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E506215C-7D01-81A4-7B36-0F43DE66514F" name="FK_LEITURA_SENSOR">
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F19B0AC6-91FF-24A7-CAD7-8A5ABE63C667"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_VALOR_FAIXA" directorySegmentName="seg_0" id="F733FE68-AC28-9728-11D8-AE87BB7BB1B7">
+<sourceDDLFile>schema_oracle_ptbr_legacy.sql</sourceDDLFile>
+<createdBy>rbnco</createdBy>
+<createdTime>2025-09-06 14:30:18 UTC</createdTime>
+<ownerDesignName>hermes_reply_fase5_modelo_relacional_rm565066</ownerDesignName>
+<importedID>294F83AA-0DAE-F3BC-3CF7-3617948AC8CC</importedID>
+<rule><![CDATA[VALOR > -200 AND VALOR < 1000]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
