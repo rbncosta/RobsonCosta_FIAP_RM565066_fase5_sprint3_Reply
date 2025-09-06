@@ -51,7 +51,6 @@ Repositório da **Fase 5 – Hermes Reply** com solução fim a fim:
 ```sql
 ALTER SESSION SET NLS_TIMESTAMP_FORMAT = 'YYYY-MM-DD"T"HH24:MI:SS';
 
----
 
 ## 🤖 Passo a passo — ML (Regressão)
 
@@ -65,8 +64,6 @@ ALTER SESSION SET NLS_TIMESTAMP_FORMAT = 'YYYY-MM-DD"T"HH24:MI:SS';
 ```python
 import pandas as pd
 df = pd.read_csv('/content/data/metricas_ativos_regressao.csv')
-
----
 
 ## 🖼️ Imagens e explicações
 
