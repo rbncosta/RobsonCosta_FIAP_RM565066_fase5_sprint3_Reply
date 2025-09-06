@@ -1,17 +1,19 @@
-# Hermes Reply — Fase 5
+# Enterprise Challenge - Sprint 3 - Reply
 
 ## 👤 Integrante
 - **Nome:** Robson Alves Costa  
 - **RM:** 565066  
 - **Curso:** Inteligência Artificial – FIAP  
-- **Fase:** 5-SET-2025  
+- **Fase:** 5-SET-2025
 
-Este repositório contém a modelagem de dados (Oracle) e o pipeline de Machine Learning **personalizados** para o RM 565066.  
-A seguir, você encontra um **guia completo** de execução e a **explicação de cada imagem** usada no projeto.
-
+## 📌 Introdução
+Este repositório contém a entrega da **Fase 5 – Hermes Reply** do curso de Inteligência Artificial da FIAP.
+**(1) Banco de Dados (Oracle)**: modelo relacional para leituras de sensores, DDL, views e script de carga.
+**(2) Machine Learning (Regressão)**: notebook que prevê vibração, compara modelos (MAE/RMSE/R²) e gera gráficos.
 ---
 
-## 📦 Estrutura principal
+## 📂 Estrutura do Repositório
+- **`README.md`** → Este documento introdutório, com explicação geral do projeto e instruções.  
 - `db/hermes_reply_fase5_modelo_relacional_rm565066.dmd` — **arquivo DMD do Data Modeler**
 - `db/hermes_reply_fase5_modelo_relacional_rm565066` — **pasta com os arquivos criados pelo Data Modeler**
 - `db/schema_oracle_rm565066.sql` — **schema de criação do banco de dados**
@@ -26,12 +28,22 @@ A seguir, você encontra um **guia completo** de execução e a **explicação d
 
 ---
 
+## ▶️ Explicação do projeto em Vídeo
+🔗 [Clique aqui para assistir ao vídeo do Notebook no YouTube](https://youtu.be/FL-xDdnsxSU)
+
+
 ## 🧰 Passo a passo — Banco de Dados (Oracle)
 
-1. **Criar o schema**  
+1. **Como o banco de dados foi modelado**  
+   - Modelo relacional normalizado utilizando a ferramenta Data Modeler, considerando as tabelas PLANTA, ATIVO, SENSOR, LEITURA_SENSOR, EVENTO_MANUTENCAO para séries temporais.
+   - Relações 1:N: PLANTA→ATIVO, ATIVO→SENSOR, SENSOR→LEITURA_SENSOR, ATIVO→EVENTO; PK/FK em todas as tabelas.
+   - Regras: UNIQUE (ATIVO_ID, TIPO_SENSOR) e CHECKs (TIPO_SENSOR, UNIDADE, VALOR, TIPO_EVENTO/SEVERIDADE).
+   - Performance: índices por tempo (LEITURA_SENSOR(SENSOR_ID, DATA_HORA), EVENTO(ATIVO_ID, DATA_HORA)) e views (24h, resumo por hora, anomalias).
+
+2. **Criar o schema**  
    - Rode `db/schema_oracle_rm565066.sql`.
 
-2. **Popular com dados reais da simulação**  
+3. **Popular com dados reais da simulação**  
    - Execute o script: **`script_insert_dados_rm565066.sql`** (fornecido junto a este README).  
    - Ele insere:
      - 1 **PLANTA**
@@ -39,7 +51,7 @@ A seguir, você encontra um **guia completo** de execução e a **explicação d
      - 15 **SENSORES**
      - ~16 mil **LEITURAS** (toda a base `leituras_sensores.csv`)
 
-3. **Explorar com queries prontas**  
+4. **Explorar com queries prontas**  
    - `db/consultas_demo_rm565066.sql` inclui:
 ---
 
@@ -64,7 +76,7 @@ A seguir, você encontra um **guia completo** de execução e a **explicação d
 **Por que está assim:** layout otimizado e cores leves para leitura em telas e relatórios.
 
 ### 2) Série temporal — Real vs. Previsto (regressão)
-![Série temporal](assets/Serie_Temporal_rm565066.png.png)
+![Série temporal](assets/Serie_Temporal_rm565066.png)
 
 **O que mostra:** comparação das primeiras amostras do conjunto de teste, entre o valor real da **vibração média móvel (+10 min)** e o valor **previsto** pelo melhor modelo.  
 **Por que é útil:** evidencia a aderência do modelo ao padrão temporal.
