@@ -42,15 +42,10 @@ Repositório da **Fase 5 – Hermes Reply** com solução fim a fim:
 - Relações 1:N: PLANTA→ATIVO, ATIVO→SENSOR, SENSOR→LEITURA_SENSOR, ATIVO→EVENTO; PK/FK em todas.
 - Regras: **UNIQUE** (ATIVO_ID, TIPO_SENSOR) e **CHECK** (TIPO_SENSOR, UNIDADE, VALOR, TIPO_EVENTO/SEVERIDADE).
 - Índices por tempo e **views**: `V_LEITURAS_24H`, `V_RESUMO_ATIVO_HORA`, `V_ANOMALIAS`.
-
 2. **Criar o schema**
 - Importe e rode `db/schema_oracle_rm565066.sql` (Oracle 12c+ com IDENTITY).
-
 3. **Popular com dados da simulação**
-- *Dica:* garanta o formato de timestamp antes do insert:
-```sql
-ALTER SESSION SET NLS_TIMESTAMP_FORMAT = 'YYYY-MM-DD"T"HH24:MI:SS';
-'''
+- **Dica:** garanta o formato de timestamp antes do insert: ALTER SESSION SET NLS_TIMESTAMP_FORMAT = 'YYYY-MM-DD"T"HH24:MI:SS';
 
 ## 🤖 Passo a passo — ML (Regressão)
 
@@ -59,11 +54,9 @@ ALTER SESSION SET NLS_TIMESTAMP_FORMAT = 'YYYY-MM-DD"T"HH24:MI:SS';
    - `data/metricas_ativos_regressao.csv` (base para ML)
    - `data/leituras_sensores.csv` (base longa; usada se precisar reconstruir)
 3. Execute as células — o notebook compara **LinearRegression**, **RandomForest**, **GradientBoosting** (métricas: **MAE**, **RMSE**, **R²**) e salva gráficos em `assets/`.
-
-> Se o CSV não estiver no mesmo nível do notebook, use:
-```python
-import pandas as pd
-df = pd.read_csv('/content/data/metricas_ativos_regressao.csv')
+4. Se o CSV não estiver no mesmo nível do notebook, use:
+   - import pandas as pd
+   - df = pd.read_csv('/content/data/metricas_ativos_regressao.csv')
 
 ## 🖼️ Imagens e explicações
 
