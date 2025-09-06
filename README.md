@@ -9,9 +9,9 @@
 ---
 
 ## 📌 Introdução
-Este repositório contém a entrega da **Fase 5 – Hermes Reply** do curso de Inteligência Artificial da FIAP.
-**(1) Banco de Dados (Oracle)**: modelo relacional para leituras de sensores, DDL, views e script de carga.
-**(2) Machine Learning (Regressão)**: notebook que prevê vibração, compara modelos (MAE/RMSE/R²) e gera gráficos.
+Repositório da **Fase 5 – Hermes Reply** com solução fim a fim:
+**Banco de Dados (Oracle)** para séries temporais de sensores (DDL, views, inserts, consultas) e
+**Machine Learning (Regressão)** que prevê vibração em **+10 min** com métricas e gráficos.
 
 ---
 
@@ -37,33 +37,34 @@ Este repositório contém a entrega da **Fase 5 – Hermes Reply** do curso de I
 
 ## 🧰 Passo a passo — Banco de Dados (Oracle)
 
-1. **Como o banco de dados foi modelado**  
-   - Modelo relacional normalizado utilizando a ferramenta Data Modeler, considerando as tabelas PLANTA, ATIVO, SENSOR, LEITURA_SENSOR, EVENTO_MANUTENCAO para séries temporais.
-   - Relações 1:N: PLANTA→ATIVO, ATIVO→SENSOR, SENSOR→LEITURA_SENSOR, ATIVO→EVENTO; PK/FK em todas as tabelas.
-   - Regras: UNIQUE (ATIVO_ID, TIPO_SENSOR) e CHECKs (TIPO_SENSOR, UNIDADE, VALOR, TIPO_EVENTO/SEVERIDADE).
-   - Performance: índices por tempo (LEITURA_SENSOR(SENSOR_ID, DATA_HORA), EVENTO(ATIVO_ID, DATA_HORA)) e views (24h, resumo por hora, anomalias).
+1. **Modelo e DER**
+- Modelagem normalizada com tabelas **PLANTA**, **ATIVO**, **SENSOR**, **LEITURA_SENSOR**, **EVENTO_MANUTENCAO**.
+- Relações 1:N: PLANTA→ATIVO, ATIVO→SENSOR, SENSOR→LEITURA_SENSOR, ATIVO→EVENTO; PK/FK em todas.
+- Regras: **UNIQUE** (ATIVO_ID, TIPO_SENSOR) e **CHECK** (TIPO_SENSOR, UNIDADE, VALOR, TIPO_EVENTO/SEVERIDADE).
+- Índices por tempo e **views**: `V_LEITURAS_24H`, `V_RESUMO_ATIVO_HORA`, `V_ANOMALIAS`.
 
-2. **Criar o schema**  
-   - Rode `db/schema_oracle_rm565066.sql`.
+2. **Criar o schema**
+- Importe e rode `db/schema_oracle_rm565066.sql` (Oracle 12c+ com IDENTITY).
 
-3. **Popular com dados reais da simulação**  
-   - Execute o script: **`script_insert_dados_rm565066.sql`** (fornecido junto a este README).  
-   - Ele insere:
-     - 1 **PLANTA**
-     - 5 **ATIVOS**
-     - 15 **SENSORES**
-     - ~16 mil **LEITURAS** (toda a base `leituras_sensores.csv`)
+3. **Popular com dados da simulação**
+> *Dica:* garanta o formato de timestamp antes do insert:
+```sql
+ALTER SESSION SET NLS_TIMESTAMP_FORMAT = 'YYYY-MM-DD"T"HH24:MI:SS';
 
-4. **Explorar com queries prontas**  
-   - `db/consultas_demo_rm565066.sql` inclui:
 ---
 
 ## 🤖 Passo a passo — ML (Regressão)
-1. Abra `notebooks/ml_regressao_rm565066.ipynb` no Colab ou local.  
-2. As entradas vêm de `data/metricas_ativos_regressao.csv` (já gerado a partir da base longa).  
-3. Modelos comparados: **LinearRegression**, **RandomForestRegressor**, **GradientBoostingRegressor**.  
-4. Métricas: **MAE**, **RMSE**, **R²**.  
-5. Gráficos gerados automaticamente em `assets/`.
+
+1. Abra `notebooks/ml_regressao_rm565066.ipynb` no Colab (ou local).  
+2. Garanta os CSVs em `data/`:
+   - `data/metricas_ativos_regressao.csv` (base para ML)
+   - `data/leituras_sensores.csv` (base longa; usada se precisar reconstruir)
+3. Execute as células — o notebook compara **LinearRegression**, **RandomForest**, **GradientBoosting** (métricas: **MAE**, **RMSE**, **R²**) e salva gráficos em `assets/`.
+
+> Se o CSV não estiver no mesmo nível do notebook, use:
+```python
+import pandas as pd
+df = pd.read_csv('/content/data/metricas_ativos_regressao.csv')
 
 ---
 
