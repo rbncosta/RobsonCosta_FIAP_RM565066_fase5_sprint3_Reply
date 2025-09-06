@@ -6,10 +6,13 @@
 - **Curso:** Inteligência Artificial – FIAP  
 - **Fase:** 5-SET-2025
 
+---
+
 ## 📌 Introdução
 Este repositório contém a entrega da **Fase 5 – Hermes Reply** do curso de Inteligência Artificial da FIAP.
 **(1) Banco de Dados (Oracle)**: modelo relacional para leituras de sensores, DDL, views e script de carga.
 **(2) Machine Learning (Regressão)**: notebook que prevê vibração, compara modelos (MAE/RMSE/R²) e gera gráficos.
+
 ---
 
 ## 📂 Estrutura do Repositório
