@@ -24,10 +24,10 @@ Repositório da **Fase 5 – Hermes Reply** com solução fim a fim:
 - `db/consultas_demo_rm565066.sql` — **consultas úteis de demonstração**
 - `docs/dicionario_dados_rm565066.csv` — **dicionário de dados**
 - `data/leituras_sensores.csv` — **base simulada (por sensor, por data/hora)**
-- `data/metricas_ativos_regressao.csv` — **base para ML (features + target)**
+- `data/metricas_ativos_regressao.csv` — **base para Machine Learning (features + target)**
 - `notebooks/ml_regressao_rm565066.ipynb` — **arquivo do notebook**
 - `assets/schema_oracle_Data_Modeler_rm565066.png` — **DER do banco de dados**
-- `assets/Distribuicao_rm565066.png`, `assets/Paridade_rm565066.png`, `assets/Serie_Temporal_rm565066.png` — **gráficos do ML**
+- `assets/Distribuicao_rm565066.png`, `assets/Paridade_rm565066.png`, `assets/Serie_Temporal_rm565066.png` — **gráficos do **
 
 ---
 
@@ -47,11 +47,11 @@ Repositório da **Fase 5 – Hermes Reply** com solução fim a fim:
 3. **Popular com dados da simulação**
 - **Dica:** garanta o formato de timestamp antes do insert: ALTER SESSION SET NLS_TIMESTAMP_FORMAT = 'YYYY-MM-DD"T"HH24:MI:SS';
 
-## 🤖 Passo a passo — ML (Regressão)
+## 🤖 Passo a passo — Machine Learning (Regressão)
 
 1. Abra `notebooks/ml_regressao_rm565066.ipynb` no Colab (ou local).  
 2. Garanta os CSVs em `data/`:
-   - `data/metricas_ativos_regressao.csv` (base para ML)
+   - `data/metricas_ativos_regressao.csv` (base para Machine Learning)
    - `data/leituras_sensores.csv` (base longa; usada se precisar reconstruir)
 3. Execute as células — o notebook compara **LinearRegression**, **RandomForest**, **GradientBoosting** (métricas: **MAE**, **RMSE**, **R²**) e salva gráficos em `assets/`.
 4. Se o CSV não estiver no mesmo nível do notebook, use:
