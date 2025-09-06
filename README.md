@@ -69,7 +69,7 @@ Este repositório contém a entrega da **Fase 5 – Hermes Reply** do curso de I
 
 ## 🖼️ Imagens e explicações
 
-### 1) Diagrama ER (alta resolução)
+### 1) Diagrama de Entidade e Relacionamento
 ![DER](assets/schema_oracle_Data_Modeler_rm565066.png)
 
 **O que mostra:**  
