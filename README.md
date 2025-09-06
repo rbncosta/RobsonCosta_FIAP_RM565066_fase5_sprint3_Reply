@@ -72,7 +72,7 @@ Este repositório contém a entrega da **Fase 5 – Hermes Reply** do curso de I
 ### 1) Diagrama de Entidade e Relacionamento
 ![DER](assets/schema_oracle_Data_Modeler_rm565066.png)
 
-**O que mostra:**  
+**O que demonstra na imagem:**  
 - Entidades **PLANTA**, **ATIVO**, **SENSOR**, **LEITURA_SENSOR**, **EVENTO_MANUTENCAO**.  
 - Cardinalidades principais: `PLANTA 1:N ATIVO`, `ATIVO 1:N SENSOR`, `SENSOR 1:N LEITURA_SENSOR`, `ATIVO 1:N EVENTO_MANUTENCAO`.  
 - Campos e chaves evidenciados (P=PK, F=FK, U=UNIQUE, *=NOT NULL).  
