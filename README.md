@@ -28,8 +28,8 @@ Repositório da **Fase 5 – Hermes Reply** com solução fim a fim:
 - `notebooks/ml_regressao_rm565066.ipynb` — **arquivo do notebook**
 - `assets/schema_oracle_Data_Modeler_rm565066.png` — **DER do banco de dados**
 - `assets/Distribuicao_rm565066.png` — **gráficos do notebook**
-- `assets/Paridade_rm565066.png — **gráficos do notebook**
-- `assets/Serie_Temporal_rm565066.png — **gráficos do notebook**
+- `assets/Paridade_rm565066.png` — **gráficos do notebook**
+- `assets/Serie_Temporal_rm565066.png` — **gráficos do notebook**
 
 ---
 
