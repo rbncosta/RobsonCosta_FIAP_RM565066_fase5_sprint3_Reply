@@ -27,12 +27,14 @@ Repositório da **Fase 5 – Hermes Reply** com solução fim a fim:
 - `data/metricas_ativos_regressao.csv` — **base para Machine Learning (features + target)**
 - `notebooks/ml_regressao_rm565066.ipynb` — **arquivo do notebook**
 - `assets/schema_oracle_Data_Modeler_rm565066.png` — **DER do banco de dados**
-- `assets/Distribuicao_rm565066.png`, `assets/Paridade_rm565066.png`, `assets/Serie_Temporal_rm565066.png` — **gráficos do **
+- `assets/Distribuicao_rm565066.png`, `assets/Paridade_rm565066.png`, `assets/Serie_Temporal_rm565066.png` — **gráficos do notebook**
+- `assets/Paridade_rm565066.png`, `assets/Paridade_rm565066.png`, `assets/Paridade_rm565066.png` — **gráficos do notebook**
+- `assets/Serie_Temporal_rm565066.png`, `assets/Serie_Temporal_rm565066.png`, `assets/Serie_Temporal_rm565066.png` — **gráficos do notebook**
 
 ---
 
 ## ▶️ Explicação do projeto em Vídeo
-🔗 [Clique aqui para assistir ao vídeo do Notebook no YouTube](https://youtu.be/FL-xDdnsxSU)
+🔗 [Clique aqui para assistir ao vídeo do Notebook no YouTube](https://youtu.be/WZcXjdwZhvI)
 
 
 ## 🧰 Passo a passo — Banco de Dados (Oracle)
